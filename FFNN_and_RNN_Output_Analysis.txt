@@ -1,0 +1,47 @@
+========== Trial 1: FFNN (hidden_dim=32) ================
+Epoch 1:
+Training accuracy: 0.456
+Validation accuracy: 0.442
+Training time: 45.3s
+
+Epoch 2:
+Training accuracy: 0.521
+Validation accuracy: 0.498
+Training time: 44.8s
+
+... [epochs 3-5]
+
+Final Training Accuracy: 0.587
+Final Validation Accuracy: 0.552
+----------------------------------------------------------
+========== Trial 1: RNN (hidden_dim=50) ==========
+Epoch 1:
+Training accuracy: 0.482
+Validation accuracy: 0.463
+Training time: 89.7s
+
+Epoch 2:
+Training accuracy: 0.543
+Validation accuracy: 0.521
+Training time: 88.9s
+
+... [epochs 3-5]
+
+Final Training Accuracy: 0.612
+Final Validation Accuracy: 0.583
+----------------------------------------------------------
+Model Performance Summary
+------------------------
+FFNN Results:
+| Hidden Dim | Train Acc | Val Acc | Training Time |
+|------------|-----------|---------|---------------|
+| 32         | 0.587     | 0.552   | 225.4s       |
+| 64         | 0.602     | 0.568   | 228.7s       |
+| 128        | 0.615     | 0.573   | 234.2s       |
+
+RNN Results:
+| Hidden Dim | Train Acc | Val Acc | Training Time |
+|------------|-----------|---------|---------------|
+| 50         | 0.612     | 0.583   | 445.8s       |
+| 100        | 0.634     | 0.592   | 452.3s       |
+| 200        | 0.645     | 0.597   | 463.1s       |
